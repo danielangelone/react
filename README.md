@@ -1,2 +1,1 @@
-# react
-Basic Authentication WebPage
+# Simple WebPage whith Authentication
