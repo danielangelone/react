@@ -34,6 +34,8 @@ nav {
   border-radius: 4px;
   position: relative;
   background-color: #eeeeee;
+  width: 1005px;
+  margin: 0 auto;
 
 }
 
@@ -115,60 +117,6 @@ footer {
     "AGENDA LINKS";
 }
 
-.RH {
-  grid-area: RH;
-
-
-}
-
-.MAIL {
-  grid-area: MAIL;
-}
-
-.AGENDA {
-  grid-area: AGENDA;
-}
-
-.LINKS {
-  grid-area: LINKS;
-}
-
-.titulo {
-  grid-area: titulo;
-}
-
-.guia_captacao {
-  flex-direction: column;
-  align-items: center;
-  display: grid;
-  grid-area: guia_captacao;
-  width: 210px;
-}
-
-.guia_servidor {
-  grid-area: guia_servidor;
-  width: 210px;
-}
-
-.guia_teletrabalho {
-  grid-area: guia_teletrabalho;
-  width: 210px;
-}
-
-.guia_saude {
-  grid-area: guia_saude;
-  width: 210px;
-}
-
-.guia_times {
-  grid-area: guia_times;
-  width: 210px;
-}
-
-.comunica_saa {
-  grid-area: comunica_saa;
-  width: 210px;
-}
 .container {
 background-color: #fff;
 padding: 20px;
