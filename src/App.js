@@ -8,7 +8,8 @@ import Login from './components/Login';
 import Inicio from './components/Inicio';
 import Eventos from './components/Eventos';
 import './App.css';
-import './estio.css'
+import './estio.css';
+import './novo.css';
 
 function setCookie(name, value, days) {
   const date = new Date();
