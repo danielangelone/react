@@ -1,0 +1,11 @@
+.janela {
+    background-color: #282c34;
+    margin: 0 auto;
+    width: 1000px;
+
+}
+.boxl {
+    background-color: #61dafb;
+    text-align: left;
+    width: 225px;
+}

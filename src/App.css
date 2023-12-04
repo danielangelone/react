@@ -1,38 +1,125 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo img {
+  max-width: 998px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 2px;
+  min-height: 0;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  position: relative;
+  background-color: #eeeeee;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  margin: 0;
+  padding-left: 8px;
+  border: 0px solid transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #777777;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial!important;
+  font-size: 12.5px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+}
+
+a:hover {
+  background-color: #61dafb;
+}
+
+footer {
+  background-color: #282c34;
+  padding: 10px;
   color: white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 998px;
+  text-align: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.corpo {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 998px;
+}
+
+.container {
+
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "RH MAIL"
+    "AGENDA LINKS";
+}
+
+.container {
+background-color: #fff;
+padding: 20px;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
