@@ -34,8 +34,11 @@ function Login({ onLogin }) {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            <h1>
+            <img src="https://www.defesa.agricultura.sp.gov.br/images/logoCDA2015-vertical.png" alt="Defesa Agropecuaria" />
+            </h1>
             {error && <p className="error-message">{error}</p>}
+            <div className="login">
             <label>
                 Usuário:
                 <input
@@ -43,16 +46,22 @@ function Login({ onLogin }) {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
+            <br/>
             </label>
-            <label>
-                Senha:
+            </div>
+            <div className="login">
+                <label>
+                Senha: 
                 <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
             </label>
+            </div>
+            <div className="loginbt">
             <button onClick={handleLogin}>Login</button>
+            </div>
         </div>
     );
 }
