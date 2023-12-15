@@ -51,7 +51,7 @@ function Login({ onLogin }) {
             </div>
             <div className="login">
                 <label>
-                Senha: 
+                Senha:
                 <input
                     type="password"
                     value={password}

@@ -4,7 +4,7 @@ function Footer() {
     const AnoAtual = new Date().getFullYear();
     return (
         <footer>
-            <p>© {AnoAtual} - Coordenadoria de Defesa Agropecuária do Estado de São Paulo</p>
+            <p className="footer">© {AnoAtual} - Coordenadoria de Defesa Agropecuária do Estado de São Paulo</p>
         </footer>
     );
 

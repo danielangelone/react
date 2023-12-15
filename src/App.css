@@ -106,6 +106,21 @@ footer {
   text-align: right;
 }
 
+.footer {
+  text-align: center;
+  color: whitesmoke;
+  font-size: medium;
+
+}
+.menu {
+  color: black;
+  font-size: small;
+  padding: 5px;
+  textAlign: center;
+  clear: both;
+
+}
+
 .error-message {
   color: red;
   margin-bottom: 10px;
