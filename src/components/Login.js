@@ -35,33 +35,26 @@ function Login({ onLogin }) {
     return (
         <div className="login-container">
             <h1>
-            <img src="https://www.defesa.agricultura.sp.gov.br/images/logoCDA2015-vertical.png" alt="Defesa Agropecuaria" />
+                <img src="https://www.defesa.agricultura.sp.gov.br/images/logoCDA2015-vertical.png" alt="Defesa Agropecuaria" />
             </h1>
-            {error && <p className="error-message">{error}</p>}
-            <div className="login">
-            <label>
-                Usuário:
-                <input
-                    type="text"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-            <br/>
-            </label>
-            </div>
-            <div className="login">
-                <label>
-                Senha:
-                <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
-            </label>
-            </div>
-            <div className="loginbt">
-            <button onClick={handleLogin}>Login</button>
-            </div>
+            {error && <p className="error-message text-danger">{error}</p>}
+            <form>
+                <div className="row">
+                    <div className="col-sm-12 form-group mt-2 mb-2">
+                        <label for="username">Usuário:</label>
+                        <input type="text" className="form-control" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-sm-12 form-group mt-2 mb-2">
+                        <label for="password">Senha:</label>
+                        <input type="password" className="form-control" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                    </div>
+                </div>
+                <div className="text-center">
+                    <button type="button" className="btn btn-primary mt-2" onClick={handleLogin}>Login</button>
+                </div>
+            </form>
         </div>
     );
 }
